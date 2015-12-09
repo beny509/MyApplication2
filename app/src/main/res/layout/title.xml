@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/screen"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="#1BA1E2">
+<ImageButton
+android:id="@+id/btn_back0"
+android:layout_width="40dp"
+android:layout_height="40dp"
+    android:background="#1BA1E2"
+    android:src="@drawable/btn_back"
+    android:layout_alignTop="@+id/btn_list0"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" />
+    />
+
+<TextView
+    android:id="@+id/title_vtxt"
+    android:layout_width="wrap_content"
+android:layout_height="match_parent"
+android:text="智能路灯监控"
+android:textSize="20sp"
+android:gravity="center_vertical|center_horizontal"
+    android:textColor="#FFFFFF"
+    android:layout_centerVertical="true"
+    android:layout_toRightOf="@+id/btn_back0"
+    android:layout_toLeftOf="@+id/btn_list0"
+    android:layout_toStartOf="@+id/btn_list0" />
+<ImageButton
+android:id="@+id/btn_list0"
+android:layout_width="40dp"
+android:layout_height="40dp"
+    android:background="#1BA1E2"
+    android:src="@drawable/cloud_setting_press"
+    android:layout_centerVertical="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>

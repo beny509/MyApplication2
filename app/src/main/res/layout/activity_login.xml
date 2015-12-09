@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:longClickable="false"
+    android:measureWithLargestChild="false"
+    android:baselineAligned="false"
+    android:background="@drawable/login_bg">
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_gravity="center_horizontal" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/index_logo"
+        android:scaleType="fitStart"
+        android:longClickable="false"
+        android:labelFor="@android:color/black"
+        android:visibility="invisible" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="413dp"
+        android:id="@+id/scrollView"
+        android:layout_gravity="center_horizontal" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="fill_vertical">
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:id="@+id/user_atxt"
+                android:hint="用户名"
+                android:textSize="35dp"
+                android:drawableLeft="@drawable/rest"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/password_etxt"
+                android:hint="密码"
+                android:textSize="35dp"
+                android:text="changhe123"
+                android:drawableLeft="@drawable/lock"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="登入"
+                android:id="@+id/sign_in_btn"
+                android:background="#8FA3A3"
+                android:textColor="#ffffff"
+                android:textSize="35dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="95dp"
+                    android:layout_height="60dp"
+                    android:text="HTTP://"
+                    android:id="@+id/vis_addr_txt"
+                    android:singleLine="false"
+                    android:typeface="normal"
+                    android:textSize="25dp"
+                    android:textIsSelectable="true" />
+
+                <EditText
+                    android:layout_width="401dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/vis_addr_detail_txt"
+                    android:layout_weight="0.95" />
+
+                <Button
+                    android:layout_width="55dp"
+                    android:layout_height="40dp"
+                    android:text="back"
+                    android:id="@+id/back_value_btn"
+                    android:background="#8FA3A3"
+                    android:textSize="20dp"
+                    android:singleLine="false" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="保存"
+                android:id="@+id/set_addr_btn"
+                android:background="#8FA3A3"
+                android:textSize="35dp"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

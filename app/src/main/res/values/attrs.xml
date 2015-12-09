@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ButtonTextImg">
+
+        <attr name="myImg" format="reference"/>
+        <attr name="myColor" format="color"/>
+        <attr name="myText" format="string"/>
+        <attr name="myTextSize" format="dimension"/>
+        <attr name="myHorV" format="string"/>
+    </declare-styleable>
+</resources>
