@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.myapplication2.DevOnoffActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:scrollbars="vertical"
+         android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sp_mode" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_horizontal">
+
+        <add.util.ButtonTextImg
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            myapp:myColor="#ffffff"
+            myapp:myText="获取"
+            myapp:myHorV="H"
+            android:background="#1BA1e2"
+            myapp:myImg="@drawable/image23"
+            myapp:myTextSize="11dp"
+            android:id="@+id/btn_getOnOff"
+
+            />
+
+        <add.util.ButtonTextImg
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            myapp:myColor="#ffffff"
+            myapp:myText="设置"
+            myapp:myHorV="H"
+            android:background="#1BA1e2"
+            myapp:myImg="@drawable/image12"
+            myapp:myTextSize="10dp"
+            android:id="@+id/btn_setOnOff"
+
+           />
+
+        <add.util.ButtonTextImg
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            myapp:myColor="#ffffff"
+            myapp:myText="详细电参"
+            myapp:myHorV="H"
+            android:background="#1BA1e2"
+            myapp:myImg="@drawable/image18"
+            myapp:myTextSize="10dp"
+            android:id="@+id/btn_getDetail"
+
+           />
+
+    </LinearLayout>
+
+</LinearLayout>
